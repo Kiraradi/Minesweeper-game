@@ -5,30 +5,78 @@
     list-style-type: none;
 }
 
-.game {
+.game-container {
+    width: 280px;
     display: flex;
-    width: 300px;
-    background-color: rgb(156, 156, 156);
-    border: 5px outset rgb(156, 156, 156) ;
-    border-radius: 2px;
-    flex-wrap: wrap;
-    margin: 30px auto 0;
-    padding: 5px;
-}
-
-.game-header {
-    width: 100%;
-    height: 100px;
-}
-
-.playing-field {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 1px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px inset rgb(187, 187, 187) ;
+    margin-top: 20px;
+    margin: 30px auto;
+    background-color: rgb(192,192,192);
+    border: 5px outset rgb(219, 219, 219);
+    border-radius: 3px;
+}
+
+.board-container {
+    margin: 5px;
+}
+
+.game-control-container {
+    height: 30px;
+    border: 4px inset rgb(219, 219, 219);
+    border-radius: 2px;
+    margin-bottom: 5px;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number-mines {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-button {
+    width: 25px;
+    height: 25px;
+    background-position: -1px -25px ;
+}
+
+.game-button:active {
+    background-position: -28px -25px;
+}
+
+.game-button-inprocess {
+    background-position: -55px -25px;
+}
+
+.game-button-victory {
+    background-position: -82px -25px;
+}
+
+.game-button-loss {
+    background-position: -109px -25px;
+}
+
+
+.timer {
+    display: flex;
+    flex-direction: row;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 4px inset rgb(219, 219, 219);
+    border-radius: 2px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
 .icon {
@@ -36,11 +84,106 @@
     background-repeat: no-repeat;
 }
 
-.game-cell {
+.cell {
     width: 16px;
     height: 16px;
     background-position: 0 -51px ;
 }
-.game-cell:active {
+
+.cell:active {
     background-position: -16px -51px ;
 }
+
+.cell-flag {
+    background-position: -34px -51px;
+}
+
+.cell-question {
+    background-position: -52px -51px;
+}
+
+.cell-not-mine {
+    background-position: -119px -51px 
+}
+
+.cell-none-mine {
+    background-position: -16px -52px ;
+}
+
+.cell-mine {
+    background-position: -87px -51px ;
+}
+
+.cell-mine-active {
+    background-position: -102px -51px ;
+}
+
+.cell-mine-1 {
+    background-position: 0 -69px ;
+}
+
+.cell-mine-2 {
+    background-position: -18px -69px ;
+}
+
+.cell-mine-3 {
+    background-position: -34px -68px ;
+}
+
+.cell-mine-4 {
+    background-position: -50px -69px ;
+}
+
+.cell-mine-5 {
+    background-position: -68px -69px ;
+}
+
+.cell-mine-6 {
+    background-position: -86px -69px ;
+}
+
+.cell-mine-7 {
+    background-position: -104px -69px ;
+}
+
+.cell-mine-8 {
+    background-position: -120px -69px ;
+}
+
+.mine-count-icon, .timer-icon {
+    width: 12px;
+    height: 25px;
+}
+
+.number-0 {
+    background-position: -126px 1px;
+}
+
+.number-1 {
+    background-position: -1px 1px;
+}
+.number-2 {
+    background-position: -14px 1px;
+}
+.number-3 {
+    background-position: -28px 1px;
+}
+.number-4 {
+    background-position: -43px 1px;
+}
+.number-5 {
+    background-position: -56px 1px;
+}
+.number-6 {
+    background-position: -71px 1px;
+}
+.number-7 {
+    background-position: -85px 1px;
+}
+.number-8 {
+    background-position: -99px 1px;
+}
+.number-9 {
+    background-position: -113px 1px; 
+}
+
